@@ -1,0 +1,656 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    max-width: 60rem;
+}
+
+body {
+    background: black;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+.firstleftcontainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border-color: dimgray;
+    background-color: rgb(63, 63, 63);
+    width: 6rem;
+    /* padding: 0.8rem 0.5rem; */
+    color: slategray;
+    height: 7rem;
+    margin-bottom: 10px;
+}
+
+.iconsinfirstleftcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.coloroftext {
+    color: white;
+}
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+} */
+
+.secondleftcontainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20rem;
+    border-color: dimgray;
+    background: rgb(63, 63, 63);
+    width: 6rem;
+    /* padding: 0.8rem 0.5rem; */
+    color: dimgray;
+    height: 47 qrem;
+    /* padding-top: 1rem; */
+}
+
+
+.libraryiconincontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 1rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    margin-left: 10%;
+}
+
+.secondleftcontainerincontainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    border-color: gray;
+    background: lightskyblue;
+    width: 4rem;
+    padding: 0.8rem 1rem;
+    color: slategray;
+    height: 4rem;
+    padding-top: 1rem;
+    margin-left: 10%;
+}
+
+.centercontainer {}
+
+.hoverovericon {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.symbols {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding-left: 1.25rem;
+}
+
+.installera-app {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 1rem;
+    border-color: gray;
+    background: gray;
+    width: 8rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.footercontainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    height: 100%;
+    max-height: 100px;
+    padding: 0.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.endfooter {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.centerfooter {
+    display: flex;
+    justify-content: center;
+    flex: auto;
+}
+
+.button {
+    display: flex;
+    border: 0px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.otherbuttons {
+    background: gray;
+}
+
+img {
+    border-radius: 5%;
+}
+
+.pictureinfooter {
+    width: 75px;
+    height: 75px;
+}
+
+.boxinfooter {
+    float: left;
+    padding-right: 0.5rem;
+}
+
+.songinfo {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.5rem;
+}
+
+#artistname {
+    color: lightgrey;
+    padding-top: 2px;
+}
+
+#songname {
+    color: white;
+}
+
+.addsigncontainer {
+    position: fixed;
+    bottom: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: white;
+}
+
+#addcircle {
+    display: flex;
+    background-color: grey;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    direction: ltr;
+}
+
+.leftscrollbar {
+    direction: rtl;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.headercontainer {
+    display: flex;
+    width: 100%;
+    border: 0px solid black;
+    top: 0;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.headercontainericons {
+    display: flex;
+    background-color: black;
+    text-decoration-color: white;
+    border-bottom: 10px solid black;
+}
+
+.headerdotsicons {
+    display: flex;
+    margin-left: 10px;
+}
+
+.rightcontainer {
+    /* position: fixed; */
+    right: 0;
+    border-radius: 1rem;
+    border-color: dimgray;
+    background: rgb(63, 63, 63);
+    width: 15rem;
+    padding: 0.8rem 0.5rem;
+    color: slategray;
+    height: 52rem;
+    margin-bottom: 10px;
+    float: right;
+    resize: horizontal;
+    /* overflow: auto; */
+    min-width: 300px;
+    max-width: 450px;
+    height: 55rem;
+    position: fixed;
+    top: 0;
+}
+
+.rightcontainerheader {
+    margin-top: 10px;
+    display: flex;
+    border: 0px;
+    text-decoration-color: white;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    direction: rtl;
+}
+
+.rightcontainerpicture {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+.rightcontainerunderpicture {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    direction: rtl;
+}
+
+
+
+.rightcontaineraboutartistpicture {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.descriptionunderpicture {
+    border-radius: 1rem;
+    border-color: red;
+    background: rgb(100, 100, 100);
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    color: slategray;
+    height: 7rem;
+    margin-bottom: 10px;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutartist {}
+
+.rightcontainerheaderavupphovspersoner {
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    flex-direction: row;
+}
+
+
+
+.rightcontainerupphovspersoner {
+    margin-top: 15px;
+    border-radius: 1rem;
+    border-color: red;
+    background: rgb(100, 100, 100);
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    color: slategray;
+    height: 13rem;
+    margin-bottom: 10px;
+}
+
+.follownexttoartist {}
+
+.rightcontainernextinqueue {
+    justify-content: space-between;
+    margin-top: 15px;
+    border-radius: 1rem;
+    border-color: red;
+    background: rgb(100, 100, 100);
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    color: slategray;
+    height: 7rem;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    direction: rtl;
+}
+
+.songnextinqueue {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+}
+
+.nextinqueueheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerofbody {
+    background: rgb(63, 63, 63);
+    /* display: flex; */
+    flex-grow: 1;
+    width: 100%;
+}
+
+.examplebody {
+    flex-wrap: wrap;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    position: sticky;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+
+.secondheaderofbody {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.bordersinsecondheaderofbody {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    border: 0px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.headercontainerbody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    position: sticky;
+    top: 0;
+}
+
+.containerforarrows {
+    display: flex;
+    padding: 15px;
+}
+
+.usersettings {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.arrowsinbody {
+    display: flex;
+    align-self: center;
+    background: black;
+    border: 0px;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 7px;
+}
+
+.downloadbutton {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+.body {
+    display: flex;
+}
+
+.newlyplayedsongs {
+    display: grid;
+    min-width: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    display: grid;
+    grid-template-columns: 10 px 100px;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto auto auto auto;
+}
+
+.middlecontainer {
+    grid-template-columns: 10px 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#one {
+    display: flex;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 0px;
+    /* border-color: blue; */
+    box-sizing: border-box;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(80,
+            80,
+            80);
+}
+
+.classforheaderofbody {
+    flex-wrap: wrap;
+    margin-top: 78px;
+    background: rgb(43, 43, 43)
+}
+
+@media only screen and (max-width: 720px) {
+    .rightcontainer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .secondleftcontainer {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .headerofbody {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 720px) {}
+
+@media only screen and (max-width: 720px) {
+
+    .endfooter {
+        display: none;
+    }
+
+    .centerfooter {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .newlyplayedsongs .container {
+        grid-template-columns: auto auto !important;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .fml {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .mobilefooter {
+        display: block !important;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+    }
+
+    .mobilefootercontainer {
+        display: flex;
+        background: black;
+        justify-content: space-evenly;
+    }
+
+    .footercontainer {
+        display: none !important;
+    }
+}
+
+.bordersinsecondheaderofbodystyle {
+    width: 50px;
+    margin-left: 10px;
+    padding-left: 14px;
+    border-radius: 80px;
+    margin-right: 5px;
+    background: rgb(80, 80, 80);
+}
+
+
+
+.styleformidpicture {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+
+}
+
+@media only screen and (max-width: 320px) {
+    .styleformidpicture {
+        overflow-x: scroll;
+
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .usersettings {
+        display: none;
+    }
+
+    .containerforarrows {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .headerofbody {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .secondheaderofbody {
+        z-index: 1;
+    }
+
+    @media only screen and (max-width: 320px) {
+        .headercontainerbody {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .firstleftcontainer {}
+}
+
+
+
+
+
+
+/* .rightcontainerupphovspersoner {
+    padding-top: 15px;
+    display: flex;
+    border: 1rem;
+    border-radius: 10%;
+    color: red;
+    height: 5rem;
+    width: 8rem;
+    flex-direction: column;
+} */
+
+.slidecontainer {
+    width: 100%;
+}
+
+/* .slider {
+    background: grey;
+
+} */
+
+/* .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+} */
+
+/* .slider:hover {
+    opacity: 1;
+    color: green;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+} */
