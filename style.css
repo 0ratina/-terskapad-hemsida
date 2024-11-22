@@ -240,9 +240,10 @@ a:hover {
     max-width: 450px;
     height: 41.5rem;
     top: 0;
-    /* position: sticky; */
-    position:fixed;
-    margin-top: 185px;
+    height: 100%;
+    position: sticky;
+    /* position:fixed; */
+    /* margin-top: 185px; */
 }
 
 .rightcontainerheader {
