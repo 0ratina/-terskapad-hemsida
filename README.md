@@ -10,3 +10,5 @@ Jag har valt att göra Spotifys hemsida, de avgränsningar jag har gjort på den
 
 -Komprimerat vissa delar av den mittersta containern
 
+
+

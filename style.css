@@ -106,7 +106,7 @@ body {
 }
 
 .footercontainer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     background: black;
@@ -115,6 +115,7 @@ body {
     padding: 0.5rem;
     align-items: center;
     display: flex;
+
 }
 
 .endfooter {
@@ -174,7 +175,6 @@ img {
 }
 
 .addsigncontainer {
-    position: fixed;
     bottom: 0;
 }
 
@@ -194,14 +194,11 @@ a:hover {
 
 .scrollbar {
     overflow-y: scroll;
-    overflow-x: hidden;
     direction: ltr;
 }
 
 .leftscrollbar {
     direction: rtl;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
 .headercontainer {
@@ -225,8 +222,8 @@ a:hover {
     margin-left: 10px;
 }
 
-.rightcontainer {
-    /* position: fixed; */
+    .rightcontainer {
+        z-index: 1;
     right: 0;
     border-radius: 1rem;
     border-color: dimgray;
@@ -241,9 +238,11 @@ a:hover {
     /* overflow: auto; */
     min-width: 300px;
     max-width: 450px;
-    height: 55rem;
-    position: fixed;
+    height: 41.5rem;
     top: 0;
+    /* position: sticky; */
+    position:fixed;
+    margin-top: 185px;
 }
 
 .rightcontainerheader {
@@ -432,6 +431,7 @@ a:hover {
 
 .body {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .newlyplayedsongs {
@@ -476,27 +476,34 @@ a:hover {
     background: rgb(43, 43, 43)
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
     .rightcontainer {
         display: none;
     }
 }
 
-@media only screen and (max-width: 720px) {
+/* @media only screen and (min-width: 720px) {
+    .rightcontainer {
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 900px) {
     .secondleftcontainer {
         display: none;
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
     .headerofbody {
         width: 100%;
+        margin-top: 0px !important;
     }
 }
 
-@media only screen and (max-width: 720px) {}
+/* @media only screen and (max-width: 720px) {} */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
 
     .endfooter {
         display: none;
@@ -507,30 +514,52 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
     .newlyplayedsongs .container {
         grid-template-columns: auto auto !important;
     }
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (max-width: 320x) {
+    .newlyplayedsongs .container {
+        grid-template-columns: auto auto !important;
+    }
+}
+
+
+/* @media only screen and (max-width: 270px) {
+ .middlecontainer {
+        position: relative;
+            display: flex;
+            display: grid;
+            grid-template-columns: 10 px 100px;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: auto;
+    }
+    
+} */
+
+@media only screen and (min-width: 900px) {
     .fml {
         display: none !important;
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 900px) {
     .mobilefooter {
         display: block !important;
         bottom: 0;
         position: fixed;
         width: 100%;
+        height: 100px;
     }
 
     .mobilefootercontainer {
-        display: flex;
+        display: flex !important;
         background: black;
-        justify-content: space-evenly;
+        justify-content: space-evenly !important;
+        flex-direction: row;
     }
 
     .footercontainer {
@@ -550,7 +579,7 @@ a:hover {
 
 
 .styleformidpicture {
-    display: flex;
+     display: flex;
     justify-content: space-around;
     height: 100%;
     width: 100%;
@@ -559,22 +588,29 @@ a:hover {
 
 @media only screen and (max-width: 320px) {
     .styleformidpicture {
-        overflow-x: scroll;
-
+        /* justify-content: center; */
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 900px) {
     .usersettings {
-        display: none;
+        display: none !important;
+        /* display: block; */
     }
 
     .containerforarrows {
-        display: none;
+        display: none !important;
     }
 }
 
-@media only screen and (max-width: 320px) {
+/* @media only screen and (max-width: 200px) {
+    .container {
+        display:grid;
+        grid-template-columns: auto auto;
+    }
+} */
+
+@media only screen and (max-width: 900px) {
     .headerofbody {
         margin-top: 0px;
     }
@@ -583,6 +619,7 @@ a:hover {
 @media only screen and (max-width: 320px) {
     .secondheaderofbody {
         z-index: 1;
+        fill: aliceblue;
     }
 
     @media only screen and (max-width: 320px) {
@@ -597,6 +634,81 @@ a:hover {
 @media only screen and (max-width: 320px) {
     .firstleftcontainer {}
 }
+
+/* @media only screen and (max-width: 32px){
+    .body{ 
+    }
+} */
+
+@media only screen and (max-width: 900px) {
+    .middlecontainer {
+    
+    }
+}
+
+/* @media only screen and (max-width: 270px) {
+    .styleformidpicture {
+        grid-template-columns: auto;
+        width: 1000px;
+    }
+} */
+
+@media only screen and (max-width: 270px) {
+    .body {
+        width: 100%;
+        position: static;
+    }
+}
+
+/* @media only screen and (max-width: 270px) {
+    .container {
+        display: table-column;
+        
+    }
+} */
+
+/* @media only screen and (max-width: 270px) {
+    .middlecontainer {
+        display: grid !important;
+        grid-template-columns: auto !important;
+        
+    }
+} */
+
+/* @media only screen and (max-width: 270px) {
+    * {
+        width: 100%;
+    }
+} */
+
+@media only screen and (max-width: 270px) {
+    .middlecontainer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .styleformidpicture {
+        display:block !important;
+    }
+
+    #one{
+    display: flex;
+    border-style: solid;
+    border-radius: 5%;
+    border-width: 0px;
+    /* border-color: blue; */
+    box-sizing: border-box;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(80, 80, 80);
+    }
+
+
+}
+
+
 
 
 
